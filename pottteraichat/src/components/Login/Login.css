@@ -1,0 +1,200 @@
+.parent {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(213, 178, 201, 1) 13%,
+    rgba(217, 177, 209, 1) 21%,
+    rgba(214, 179, 201, 1) 28%,
+    rgba(196, 180, 217, 1) 67%,
+    rgba(223, 176, 208, 1) 79%,
+    rgba(148, 187, 233, 1) 99%
+  );
+  height: 100%;
+  width: 1535px;
+  position: relative;
+
+  & > .parentone {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 10%;
+
+    & > .child1 {
+      background-color: rgba(255, 51, 0, 0.069);
+      width: 50%;
+      border-radius: 20px;
+      top: 0;
+
+      & > .img1 {
+        height: 680px;
+      }
+    }
+
+    & > .child2 {
+      width: 50%;
+      margin-left: 20px;
+      padding-left: 20px;
+      & > .desone {
+        color: cadetblue;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+      & > .formparent {
+        font-weight: 700;
+        padding-left: 20px;
+        width: 400px;
+        height: 590px;
+        margin-left: 40px;
+        background-color: rgba(133, 212, 186, 0.575);
+
+        & > .imggg {
+          height: 250px;
+          margin-top: 10px;
+          margin-left: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Đối với điện thoại di động */
+@media only screen and (max-width: 767px) {
+  .parent {
+    background: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(213, 178, 201, 1) 13%,
+      rgba(217, 177, 209, 1) 21%,
+      rgba(214, 179, 201, 1) 28%,
+      rgba(196, 180, 217, 1) 67%,
+      rgba(223, 176, 208, 1) 79%,
+      rgba(148, 187, 233, 1) 99%
+    );
+    height: 110%;
+    width: 360px;
+    position: relative;
+
+    & > .parentone {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 450px;
+      padding-right: 10%;
+
+      & > .child1 {
+        background-color: rgba(255, 51, 0, 0.069);
+        width: 50%;
+        border-radius: 20px;
+        top: 0;
+
+        & > .img1 {
+          margin-top: 10px;
+          margin-left: 60px;
+          height: 220px;
+          width: 220px;
+        }
+      }
+
+      & > .child2 {
+        width: 80%;
+        margin-left: 5px;
+
+        & > .desone {
+          color: cadetblue;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          font-size: 20px !important;
+        }
+
+        & > .formparent {
+          font-weight: 700;
+          padding-left: 20px;
+          width: 300px;
+          height: 490px;
+          margin-left: 10px;
+
+          & > .imggg {
+            height: 180px;
+            margin-top: 10px;
+            margin-left: 140px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+/* Đối với máy tính bảng */
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+  .parent {
+    background: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(213, 178, 201, 1) 13%,
+      rgba(217, 177, 209, 1) 21%,
+      rgba(214, 179, 201, 1) 28%,
+      rgba(196, 180, 217, 1) 67%,
+      rgba(223, 176, 208, 1) 79%,
+      rgba(148, 187, 233, 1) 99%
+    );
+    height: 100%;
+    width: 1200px;
+    position: relative;
+
+    & > .parentone {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      width: 75%;
+
+      & > .child1 {
+        background-color: rgba(255, 51, 0, 0.069);
+        width: 50%;
+        border-radius: 20px;
+        top: 0;
+
+        & > .img1 {
+          width: 500px;
+          height: 730px;
+        }
+      }
+
+      & > .child2 {
+        width: 400px;
+        margin-left: 20px;
+
+        & > .desone {
+          color: cadetblue;
+          text-align: center;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          font-size: 30px;
+        }
+        & > .formparent {
+          font-weight: 700;
+          padding-left: 20px;
+          width: 400px;
+          height: 650px;
+          margin-left: 10px;
+
+          & > .destwo {
+            font-size: 25px !important;
+          }
+
+          & > .imggg {
+            height: 180px;
+            margin-top: 10px;
+            margin-left: 140px;
+          }
+        }
+      }
+    }
+  }
+}
