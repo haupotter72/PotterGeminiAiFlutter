@@ -4,7 +4,7 @@ B1: Clone Poject:git clone https://github.com/haupotter72/PotterGeminiAiFlutter.
 B2:cd đến thư mục prj:cd [tên thư mục project]
 B3:Cài đặt các dependencies (thư viện) cần thiết:
 npm install
-# hoặc
+
 yarn install
 Một số lưu ý:
 
@@ -15,7 +15,8 @@ Nếu gặp lỗi, hãy kiểm tra:
 Phiên bản Node.js có phù hợp không (xem trong package.json)
 Các biến môi trường có được cấu hình đúng không (file .env)
 Log lỗi trong terminal để xử lý
-APP:
+
+#APP:
 B1: Clone Poject:git clone https://github.com/haupotter72/PotterGeminiAiFlutter.git
 B2:cd đến thư mục prj:cd [tên thư mục project]
 B3:Lấy các dependencies từ file pubspec.yaml:
