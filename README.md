@@ -27,17 +27,25 @@ B5:Chạy project:
 flutter run
 Một số lưu ý quan trọng:
 
-Đảm bảo đã cài đặt:
-Flutter SDK
-Android Studio (cho Android development)
-Xcode (cho iOS development - nếu dùng macOS)
-VS Code hoặc IDE khác
+1. Đảm bảo đã cài đặt:
+- Flutter SDK >= 3.0
+- Dart >= 2.18
+- Firebase Project
+- VS Code hoặc Android Studio
 
-Kiểm tra các yêu cầu:
-Phiên bản Flutter phù hợp (trong file pubspec.yaml)
-Cấu hình các file môi trường (nếu có)
+2. Kiểm tra các yêu cầu:
+- Phiên bản Flutter phù hợp (trong file pubspec.yaml)
+- Cấu hình các file môi trường (nếu có)
+
+3. Cấu hình Firebase:
+- Tạo dự án trên Firebase.
+- Thêm tệp google-services.json (Android) và GoogleService-Info.plist (iOS) vào thư mục tương ứng.
+- Đảm bảo các tệp được khai báo trong pubspec.yaml.
+
+4. Cấu hình API (nếu có sử dụng):
+- Tạo file .env tại thư mục gốc: "API_KEY=your-api-key"
+  
 Kết nối thiết bị thật hoặc máy ảo
-
 Xử lý lỗi thường gặp:
 Nếu gặp lỗi về dependencies: thử xóa file pubspec.lock và chạy lại flutter pub get
 Nếu có vấn đề về build: chạy flutter clean rồi build lại
